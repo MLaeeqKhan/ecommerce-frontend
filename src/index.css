@@ -1,13 +1,171 @@
-body {
+*{
+  font-family: "Roboto", sans-serif;
+  font-size: large;
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+}
+ul{
+  padding-left: 0px;
+}
+li{
+  cursor: pointer;
+  list-style: none;
+}
+i{
+  padding: 5px;
+}
+.signup-section{
+  width: 100%;
+  height: 92vh;
+  background-color: antiquewhite;
+}
+.inner-signup-section{
+  max-width: 1200px;
+  height: 100%;
+  margin: auto;
+}
+.form {
+  height: 100%;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+}
+form{
+  max-width:80%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.441);
+  
+}
+form input{
+  border: 1px solid coral;
+  border-bottom: none; 
+  border-right:  none; 
+  margin-bottom: 20px;
+ float: right;
+}
+input:focus{
+  outline: none;
+}
+.signup-btn,.login-btn{
+  cursor: pointer;
+  border: none;
+  background-color: coral;
+  padding: 10px;
+  border-radius:10px ;
+  color: white;
+  margin-top: 20px;
+}
+.signup-btn:hover{
+  background-color: rgba(255, 127, 80, 0.795);
+}
+.input{
+  width: 100%;
+}
+p{
+  display: block;
+ float: inline-start;
+ padding-right: 10px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.resetPassword{
+  margin-top: 20px;
+}
+.admin-section{
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(233, 228, 222);
+
+}
+.inner-admin-section{
+  max-width: 100%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+}
+.admin-list-box{
+height: 100%;
+width: 20%;
+border: 2px solid grey;
+}
+
+.show-addmin-components{
+  height: 100%;
+  width: 80%;
+}
+.admin-box-ul{
+  width: 100%;
+}
+.admin-box-li{
+font-weight: 400;
+border: 2px solid grey;
+width: 100%;
+padding: 10PX;
+margin-bottom: 5px;
+}
+.card{
+  box-shadow: 10px 10px 10px  rgba(129, 9, 33, 0.337);
+}
+/* pagination.css */
+
+.pagination-button {
+  padding: 10px 20px;
+  margin: 0 5px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pagination-button:hover {
+  background-color: #0056b3;
+}
+
+.pagination-button:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+
+.admin-form{
+display: flex;
+justify-content:end;
+align-self: flex-start;
+}
+.form-control{
+  /* padding: 40px; */
+  display: flex;
+  justify-self: flex-start;
+  width: 30%;
+}
+.filtr {
+  margin: 20px;
+  border-radius: 50%;
+  border: 5px solid rgb(129, 9, 33);
+  padding: 5px 5px; 
+  background-color: #f8f9fa;
+  color: #212529;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  box-shadow: 10px 10px 10px  rgba(129, 9, 33, 0.337);
+
+}
+
+.filtr:hover {
+  background-color: rgb(129, 9, 33);
+  color: #fff;
+  transform: scale(1.1);
+}
+.buy-btn{
+  border-radius: 10px;
+  color: white;
+  background-color:  rgb(129, 9, 33);
+  border: none;
 }
