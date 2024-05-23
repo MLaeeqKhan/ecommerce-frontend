@@ -1,6 +1,7 @@
 import { useState } from "react"
 import AddItems from "../components/AddItems";
 import ListItems from "../components/ListItems";
+import AdminListProducts from "../components/AdminListProducts";
 
 const Admin = () => {
     const [addItems,setAddItems] = useState(false);
@@ -30,7 +31,7 @@ const Admin = () => {
     </div>
     <div className="show-addmin-components">
         {addItems && <AddItems/>}
-        {listItems && <ListItems/>}
+        {listItems && <AdminListProducts/>}
     </div>
 </div>
     </section>

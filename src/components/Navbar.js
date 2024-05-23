@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import { useSelector,useDispatch } from "react-redux";
 import { userData } from "../ReduxToolKit/Slice";
 import { useEffect } from "react";
-import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const dispatch=useDispatch();
@@ -15,7 +14,7 @@ const Navbar = () => {
 const user = useSelector((state) => {
   return state.users;
 });
-console.log("userData NavBar:",user);
+console.log("Redux data userData NavBar:",user);
 
 const handleLogout=()=>{
   localStorage.removeItem("userdata") ;
@@ -26,14 +25,15 @@ const handleLogout=()=>{
     
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
   <div className="container-fluid">
-    <Link className="navbar-brand" to="/home">Navbar</Link>
+    <Link className="navbar-brand" to="/">TechAppMart</Link>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
     <div className="collapse navbar-collapse" id="navbarNav">
-      <ul className="navbar-nav">
+      <ul className="navbar-nav me-auto">
         <li className="nav-item">
-          <Link className="nav-link active" aria-current="page" to="/home">Home</Link>
+          <Link className="nav-link active" aria-current="page" to="/
+          ">Home</Link>
         </li>
         <li className="nav-item">
           <Link className="nav-link active" aria-current="page" to="/admin">Admin</Link>
@@ -49,14 +49,21 @@ const handleLogout=()=>{
         </>)}
        
         
-        <li className="nav-item">
+       
+       
+      </ul>
+      <ul className="navbar-nav">
+      <li className="nav-item">
+          <Link className="nav-link" to="/order"><i class="bi bi-truck"></i></Link>
+        </li>
+      <li className="nav-item">
               {user && user.token ? (
-                <Link className="nav-link" to="/explore">Explore</Link>
+                <Link className="nav-link" to="/addToCart"><i className="bi bi-cart-fill"></i></Link>
               ) : (
-                <Link className="nav-link" to="/login">Explore</Link>
+                <Link className="nav-link" to="/login"><i className="bi bi-cart-fill"></i></Link>
               )}
             </li>
-       
+
       </ul>
     </div>
   </div>

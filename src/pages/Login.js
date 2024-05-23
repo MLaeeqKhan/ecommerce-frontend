@@ -38,7 +38,7 @@ import { Link, useNavigate } from "react-router-dom";
           console.log("User Login Successfully!");
           toast.success("User Login Successfully!", {
             onClose: () => {
-             navigator('/home');
+             navigator('/');
             }
           });
           

@@ -129,7 +129,7 @@ const AddItems = () => {
                     type="submit"
                     onClick={postData}
                 >
-                    Post
+                    Add
                 </button>
             </form>
   

@@ -98,6 +98,29 @@ border: 2px solid grey;
 .show-addmin-components{
   height: 100%;
   width: 80%;
+  overflow: scroll;
+}
+.admin-card-img{
+  height: 300px;
+}
+.admin-card-content{
+margin: 10px;
+}
+.admin-product-card{
+  display: flex;
+  flex-direction: row;
+}
+.admin-card-title{
+  width: 200px;
+}
+.remove{
+ height: 5 0px;
+}
+.admin-card-price{
+width:210px;
+}
+.admin-stock{
+  width: 100px;
 }
 .admin-box-ul{
   width: 100%;
@@ -109,8 +132,50 @@ width: 100%;
 padding: 10PX;
 margin-bottom: 5px;
 }
+.navbar-brand{
+  color: #bb4cff;
+  font-weight: bolder;
+  font-size: 40px;
+  color: white;
+}
+.nav-link.active{
+  color: white;
+}
+.container-fluid{
+  background-color: #d899ff;
+}
+.nav-item a{
+  color: white !important;
+  font-size: larger;
+}
 .card{
+  padding: 10px;
   box-shadow: 10px 10px 10px  rgba(129, 9, 33, 0.337);
+}
+.stock{
+  color: rgb(14, 231, 14);
+}
+.stock-quntity{
+  display: flex;
+  justify-content: space-between;
+}
+.decrement-increment{
+  margin-bottom: 10px;
+  background-color: #e2b2ff;
+  color: white;
+  border-radius: 5px;
+  /* width:200px ; */
+  display: flex;
+
+}
+.decrement, .increment{
+  background-color: #d899ff;
+  border: none;
+color: white;
+border-radius: 5px;
+}
+.selected-quantity{
+padding: 0px 5px;
 }
 /* pagination.css */
 
@@ -148,7 +213,7 @@ align-self: flex-start;
 .filtr {
   margin: 20px;
   border-radius: 50%;
-  border: 5px solid rgb(129, 9, 33);
+  border: 5px solid #e2b2ff;
   padding: 5px 5px; 
   background-color: #f8f9fa;
   color: #212529;
@@ -157,15 +222,180 @@ align-self: flex-start;
   box-shadow: 10px 10px 10px  rgba(129, 9, 33, 0.337);
 
 }
+.col{
+  width: 160px;
+}
 
 .filtr:hover {
-  background-color: rgb(129, 9, 33);
+  background-color: #e2b2ff;
   color: #fff;
   transform: scale(1.1);
 }
-.buy-btn{
+.add-to-cart-btn{
   border-radius: 10px;
   color: white;
-  background-color:  rgb(129, 9, 33);
+  background-color: 
+  #cf7fff
+  ;
   border: none;
+}
+
+
+/* slider */
+.carousal-section {
+  max-width: 100%;
+  height: 80vh;
+}
+
+.slider {
+  max-width: 100%;
+  height: 80vh;
+}
+
+.first-slide {
+  background: url('../public/images/Iphone01.jpg') no-repeat center/cover;
+}
+
+.second-slide {
+  background: url('../public/images/Ipad.jpg') no-repeat center/cover;
+}
+
+.third-slide {
+  background: url('../public/images/appleWatch.jpg') no-repeat center/cover;
+}
+
+ .slide {
+  max-width: 100%;
+  height: 80vh;
+  background-color: #ddd;
+  color: #333;
+  text-align: center;
+}
+
+.slick-dots li button {
+  position: relative;
+  bottom: 50px;
+}
+
+ .slick-dots li button:before {
+  font-size: 20px;
+  color: #fff;
+  padding-right: 20px;
+
+}
+
+ .slick-dots li.slick-active button:before {
+  opacity: 1;
+  color: #fff;
+}
+
+.slick-arrow {
+  position: absolute;
+  top: 50%;
+  color: #fff;
+  font-size: 50px;
+  padding: 10px;
+}
+
+.slick-arrow.next {
+  right: 0;
+}
+
+.slick-arrow.prev {
+  left: 0;
+  z-index: 1;
+}
+
+.slide-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  height: 100%;
+  color: #fff;
+}
+
+.slide-content span {
+  font-family: "Courgette", cursive;
+}
+
+a {
+  text-decoration: none;
+}
+
+.slide-content .slide-btn {
+  width: 135px;
+  height: 40px;
+  background: white;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.1;
+  color: #ec1d25;
+}
+
+.slide-content span {
+  font-size: 60px;
+  line-height: 1.1;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.slide-content h2 {
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 90px;
+  line-height: 1.1;
+  color:#ebccff;/* text-transform: uppercase; */
+  letter-spacing: 10px;
+  word-spacing: 10px;
+  margin-bottom: 37px;
+}
+
+.icon i {
+  padding: 0px 10px;
+}
+.cart-product-card{
+  height: 70px;
+}
+.bi-cart-fill,.bi-truck{
+  font-size: 30px;
+  display: inline;
+  float: right;
+}
+.cart-product-card{
+  box-shadow: none;
+}
+.bi-trash-fill{
+  color: crimson;
+}
+.cart-totalls-section{
+  max-width: 1200px;
+  margin: auto;
+  padding-top:30px ;
+}
+.inner-cart-totalls-section{
+  /* background-color: #ebccff; */
+  width: 500px;
+  padding: 10px;
+}
+.cart-totalls-content{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid grey;
+  padding: 10px;
+  font-weight: 300;
+}
+.cart-totalls-btn{
+  background-color: rgb(212, 62, 7);
+  border: none;
+  padding: 10px 40px;
+  color: white;
+  border-radius: 5px;
 }
