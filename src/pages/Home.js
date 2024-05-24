@@ -1,9 +1,5 @@
 import React from 'react'
 import ListItems from '../components/ListItems'
-// import $ from 'jquery';
-// import 'slick-carousel/slick/slick.css';
-// import 'slick-carousel/slick/slick-theme.css';
-// import 'slick-carousel';
 
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -36,22 +32,22 @@ const Home = () => {
     <div class="slide first-slide">
         <div class="slide-content">
             <span>Welcome to</span>
-            <h2 className='display-6 display-md-5 display-lg-4'>TechAppMart</h2>
-            <a href="#" class="slide-btn">LOOK Categories</a>
+            <h2>TechAppMart</h2>
+            {/* <a href="#" class="slide-btn">LOOK Categories</a> */}
         </div>
     </div>
     <div class="slide second-slide">
         <div class="slide-content">
             <span>Welcome to</span>
             <h2>TechAppMart</h2>
-            <a href="#" class="slide-btn">LOOK Categories</a>
+            {/* <a href="#" class="slide-btn">LOOK Categories</a> */}
         </div>
     </div>
     <div class="slide third-slide">
         <div class="slide-content">
             <span>Welcome to</span>
             <h2>TechAppMart</h2>
-            <a href="#" class="slide-btn">LOOK Categories</a>
+            {/* <a href="#" class="slide-btn">LOOK Categories</a> */}
         </div>
     </div>
 

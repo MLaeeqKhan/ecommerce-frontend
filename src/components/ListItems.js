@@ -92,17 +92,17 @@ const ListItems = () => {
             <div className="container my-3" >
                 <div className="row justify-content-center">
                     <div className="col col-md-3 d-flex justify-content-around">
-                        <img className='filtr' style={{ width: '100%', height: '100px', objectFit: 'contain' }}
+                        <img className='filtr' style={{ height: '100px', objectFit: 'contain' }}
                             src='https://res.cloudinary.com/dv9xktj1y/image/upload/v1715963407/products/kzia2vde41zjhswytvkk.jpg' onClick={() => setSelectedCategory('Mobile')} alt='Mobile' />
                     </div>
                     <div className="col col-md-3 d-flex justify-content-around">
-                        <img className='filtr' style={{ width: '100%', height: '100px', objectFit: 'contain' }} src='https://res.cloudinary.com/dv9xktj1y/image/upload/v1715959452/products/v8ptthal287n0rikhxx1.webp' onClick={() => setSelectedCategory('IPad')} alt='IPad' />
+                        <img className='filtr' style={{ height: '100px', objectFit: 'contain' }} src='https://res.cloudinary.com/dv9xktj1y/image/upload/v1715959452/products/v8ptthal287n0rikhxx1.webp' onClick={() => setSelectedCategory('IPad')} alt='IPad' />
                     </div>
                     <div className="col col-md-3 d-flex justify-content-around">
-                        <img className='filtr' style={{ width: '100%', height: '100px', objectFit: 'contain' }} src='https://res.cloudinary.com/dv9xktj1y/image/upload/v1715960433/products/uk31muu4oaln1xe3ofti.webp' onClick={() => setSelectedCategory('Watch')} alt='Watch' />
+                        <img className='filtr' style={{  height: '100px', objectFit: 'contain' }} src='https://res.cloudinary.com/dv9xktj1y/image/upload/v1715960433/products/uk31muu4oaln1xe3ofti.webp' onClick={() => setSelectedCategory('Watch')} alt='Watch' />
                     </div>
                     <div className="col col-md-3 d-flex justify-content-around">
-                        <button className='filtr' style={{ width: '100%', height: '100px', objectFit: 'contain' }} onClick={() => setSelectedCategory('All')}>All</button>
+                        <button className='filtr' style={{  height: '100px', objectFit: 'contain' }} onClick={() => setSelectedCategory('All')}>All</button>
                     </div>
                 </div>
             </div>
