@@ -1,4 +1,4 @@
-// threadDeleteApis.js
+// deleteCartProductsApis.js
 import axios from 'axios';
 
 // Delete a product
